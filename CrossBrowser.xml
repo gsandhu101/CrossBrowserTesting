@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+<test thread-count="3" name="Test">
+
+
+<parameter name="MyBrowser" value="Chrome"/>
+
+<parameter name="MyUrl" value="http://www.google.com"/>
+
+
+
+	<classes>
+
+	<class name="day11.CrossBrowserTesting"/>
+
+	</classes>
+
+
+
+
+</test>
+
+
+<test name="IETesting">
+
+<parameter name="MyBrowser" value="IE"/>
+
+<parameter name="MyUrl" value="http://www.gmail.com"/>
+
+
+<classes>
+
+<class name="day11.CrossBrowserTesting"/>
+
+</classes>
+
+</test>
+
+<test name="IETesting">
+
+<parameter name="MyBrowser" value="FireFox"/>
+
+<parameter name="MyUrl" value="http://www.yahoo.com"/>
+
+
+<classes>
+
+<class name="day11.CrossBrowserTesting"/>
+
+</classes>
+
+
+</suite>
